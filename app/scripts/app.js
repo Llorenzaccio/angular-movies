@@ -24,10 +24,20 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/server/api/movies', {
+        templateUrl: 'views/movies.html',
+        controller: 'MoviesCtrl',
+        controllerAs: 'movies'
+      })
+      .when('/server/api/movies/:id', {
+        templateUrl: 'views/movie.html',
+        controller: 'MovieCtrl',
+        controllerAs: 'movie'
+      })
+      .when('/server/api/movies/:id/actors', {
+        templateUrl: 'views/actors.html',
+        controller: 'ActorsCtrl',
+        controllerAs: 'actors'
       })
       .otherwise({
         redirectTo: '/'
