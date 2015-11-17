@@ -8,10 +8,10 @@
  * Controller of the certificationAngularApp
  */
 angular.module('certificationAngularApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function ($scope, $http) {
+    $http.get('http://localhost:3001/server/api/movies').then(function (data) {
+        $scope.list = data;
+        console.log(data);
+      }
+    )
   });
