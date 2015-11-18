@@ -5,13 +5,25 @@
 <table class="table">
   <tr>
     <th>
+      Poster
+    </th>
+    <th>
       Name
+    </th>
+    <th>
+      Directors
     </th>
   </tr>
 
-  <tr ng-repeat="movie in moviesCtrl.movies">
+  <tr ng-repeat="movie in movies.movies">
     <td>
-      {{movie.name}}
+      <img ng-src='{{movie.poster}}' height="50"/>
+    </td>
+    <td width="200">
+      {{movie.title}}
+    </td>
+    <td>
+      {{movie.directors}}
     </td>
   </tr>
 </table>

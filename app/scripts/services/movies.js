@@ -9,5 +9,5 @@
  */
 angular.module('certificationAngularApp')
   .factory('Movie', function ($resource) {
-    return $resource('http://localhost:3001/server/api/movies/:id');
+    return $resource('http://localhost:3001/server/api/movies/:id', {id:'@id'}, {});
   });
