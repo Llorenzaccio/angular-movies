@@ -1,0 +1,21 @@
+<h1>
+  {{movie.movie.title}}
+</h1>
+
+
+<img ng-src='{{movie.movie.poster}}' height="200"/>
+<div>
+  <p>{{movie.movie.category}}</p>
+  <p>{{movie.movie.releaseYear}}</p>
+  <p>{{movie.movie.rate}}</p>
+  <p>{{movie.movie.directors}}</p>
+  <p>{{movie.movie.actors}}</p>
+  <p>{{movie.movie.synopsis}}</p>
+  <p>{{movie.movie.lastViewDate}}</p>
+  <p>{{movie.movie.price}}</p>
+</div>
+
+<div class="form-group">
+  <button type="submit" ng-click="movie.modify()" class="btn btn-sm btn-default">Modify</button>
+  <button type="submit" ng-click="movie.delete()" class="btn btn-sm btn-danger">Delete</button>
+</div>

@@ -13,6 +13,12 @@
     <th>
       Directors
     </th>
+    <th>
+      Actors
+    </th>
+    <th>
+      Rating
+    </th>
   </tr>
 
   <tr ng-repeat="movie in movies.movies">
@@ -20,10 +26,16 @@
       <img ng-src='{{movie.poster}}' height="50"/>
     </td>
     <td width="200">
-      {{movie.title}}
+      <a ng-href="http://localhost:9000/#/server/api/movies/{{movie.id}}" >{{movie.title}}</a>
     </td>
     <td>
       {{movie.directors}}
+    </td>
+    <td>
+      {{movie.actors}}
+    </td>
+    <td>
+      {{movie.rate}}
     </td>
   </tr>
 </table>

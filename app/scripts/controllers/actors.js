@@ -8,7 +8,7 @@
  * Controller of the certificationAngularApp
  */
 angular.module('certificationAngularApp')
-  .controller('ActorsctrlCtrl', function () {
+  .controller('ActorsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

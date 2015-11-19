@@ -30,7 +30,7 @@ angular
         controllerAs: 'movies'
       })
       .when('/server/api/movies/:id', {
-        templateUrl: 'views/movie.html',
+        templateUrl: 'views/movie-details.html',
         controller: 'MovieCtrl',
         controllerAs: 'movie'
       })
