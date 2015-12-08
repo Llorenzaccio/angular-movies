@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name certificationAngularApp.controller:MainCtrl
+ * @name certificationAngularApp.controller:MovieaddCtrl
  * @description
- * # MainCtrl
+ * # MovieaddCtrl
  * Controller of the certificationAngularApp
  */
 angular.module('certificationAngularApp')
-  .controller('MainCtrl', function () {
+  .controller('MovieAddCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

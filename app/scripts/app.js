@@ -20,9 +20,9 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        templateUrl: 'views/movies.html',
+        controller: 'MoviesCtrl',
+        controllerAs: 'movies'
       })
       .when('/server/api/movies', {
         templateUrl: 'views/movies.html',
@@ -33,6 +33,11 @@ angular
         templateUrl: 'views/movie-details.html',
         controller: 'MovieCtrl',
         controllerAs: 'movie'
+      })
+      .when('/server/api/movie/:id?', {
+        templateUrl: 'views/movie-add.html',
+        controller: 'MovieAddCtrl',
+        controllerAs: 'movieAdd'
       })
       .when('/server/api/movies/:id/actors', {
         templateUrl: 'views/actors.html',
