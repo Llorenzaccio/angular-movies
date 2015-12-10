@@ -18,6 +18,10 @@ angular.module('certificationAngularApp')
       this.movie.$save();
       $location.path('server/api/movies');
     };
+	
+	this.cancelMovie = function() {
+		$location.path('server/api/movies');
+	};
 	/*
     this.addMovie = function() {
       Movie.addNewMovie({}, function() {

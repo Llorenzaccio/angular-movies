@@ -12,8 +12,12 @@ angular.module('certificationAngularApp')
     this.movie = Movie.get({id: $routeParams.id});
 
     this.modify = function() {
-
+		$location.path('/server/api/movie/' + $routeParams.id);
     };
+	
+	this.cancelMovie = function() {
+		$location.path('server/api/movies');
+	};
 
     this.delete = function() {
       this.movie.$remove({id: $routeParams.id}, function () {
