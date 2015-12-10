@@ -4,6 +4,8 @@
 var _ = require('lodash'),
 	MOVIES = require('./data/movies').movies;
 
+var ID = 10;	
+	
 /**
  * Fetch all movies
  * If category query is provided, fetch movies filtered by category

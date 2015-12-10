@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="angular" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/bower_components/angular" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-resource" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-cookies" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-touch" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-sanitize" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-animate" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-route" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-mocks" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/bower_components/angular" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-resource" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-cookies" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-touch" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-sanitize" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-animate" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-route" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-mocks" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

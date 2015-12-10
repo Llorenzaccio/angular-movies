@@ -9,5 +9,9 @@
  */
 angular.module('certificationAngularApp')
   .factory('Movie', function ($resource) {
-    return $resource('http://localhost:3001/server/api/movies/:id', {id:'@id'}, {});
+    return $resource('http://localhost:3008/server/api/movies/:id', {id:'@id'}/*, {
+      addNewMovie: {
+        method: 'POST'
+      }
+    }*/);
   });

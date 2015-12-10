@@ -1,51 +1,51 @@
 <form>
   <div class="form-group">
     <label for="title">Title</label>
-    <input type="text" ng-model="movies.movie.title" class="form-control" id="title" placeholder="Title" required>
+    <input type="text" ng-model="movieAdd.movie.title" class="form-control" id="title" placeholder="Title" required>
   </div>
 
   <div class="form-group">
     <label for="directors">Directors</label>
-    <input type="text" ng-model="movies.movie.directors" class="form-control" id="directors"
+    <input type="text" ng-model="movieAdd.movie.directors" class="form-control" id="directors"
            placeholder="Directors">
   </div>
 
   <div class="form-group">
     <label for="actors">Actors</label>
-    <input type="text" ng-model="movies.movie.actors" class="form-control" id="actors" placeholder="Actors">
+    <input type="text" ng-model="movieAdd.movie.actors" class="form-control" id="actors" placeholder="Actors">
   </div>
 
   <div class="form-group">
     <label for="synopsis">Synopsis</label>
-    <textarea class="form-control" rows="3" id="synopsis" ng-model="movies.movie.synopsis"
+    <textarea class="form-control" rows="3" id="synopsis" ng-model="movieAdd.movie.synopsis"
               placeholder="Synopsis"></textarea>
   </div>
 
   <div class="form-group">
     <label for="category">Category</label>
-    <input type="text" ng-model="movies.movie.category" class="form-control" id="category" placeholder="Category">
+    <input type="text" ng-model="movieAdd.movie.category" class="form-control" id="category" placeholder="Category">
   </div>
 
   <div class="form-group">
     <label for="releaseYear">Release Year</label>
-    <input type="text" ng-model="movies.movie.releaseYear" class="form-control" id="releaseYear"
+    <input type="text" ng-model="movieAdd.movie.releaseYear" class="form-control" id="releaseYear"
            placeholder="Release Year">
   </div>
 
   <div class="form-group">
     <label for="rate">Rate</label>
-    <input type="number" ng-model="movies.movie.rate" class="form-control" id="rate" placeholder="Rate">
+    <input type="number" ng-model="movieAdd.movie.rate" class="form-control" id="rate" placeholder="Rate">
   </div>
 
   <div class="form-group">
     <label for="poster">Image URL</label>
-    <input type="text" ng-model="movies.movie.poster" class="form-control" id="poster" placeholder="Image URL">
+    <input type="text" ng-model="movieAdd.movie.poster" class="form-control" id="poster" placeholder="Image URL">
   </div>
 
   <div class="form-group">
     <label for="price">Price</label>
-    <input type="number" ng-model="movies.movie.price" class="form-control" id="price" placeholder="Price">
+    <input type="number" ng-model="movieAdd.movie.price" class="form-control" id="price" placeholder="Price">
   </div>
 
-  <button type="submit" class="btn btn-success" ng-click="movieAdd.addMovie()">Submit</button>
+  <button class="btn btn-success" ng-click="movieAdd.addMovie()">Submit</button>
 </form>

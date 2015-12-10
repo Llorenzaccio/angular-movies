@@ -8,10 +8,20 @@
  * Controller of the certificationAngularApp
  */
 angular.module('certificationAngularApp')
-  .controller('MovieAddCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MovieAddCtrl', function ($scope, $routeParams, $location, Movie) {
+
+    this.movie = {};
+
+    this.movie = new Movie();
+
+    this.addMovie = function() {
+      this.movie.$save();
+      $location.path('server/api/movies');
+    };
+	/*
+    this.addMovie = function() {
+      Movie.addNewMovie({}, function() {
+        $location.path('/server/api/movies');
+      });
+    };*/
   });

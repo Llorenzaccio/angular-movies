@@ -12,13 +12,14 @@ var express 	= require('express'),
 var app = express();
 var server = http.createServer(app);
 
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 3008);
 app.use(serveStatic(path.join(__dirname, 'app')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   next();
 });
 
@@ -31,7 +32,7 @@ app.get('/server/api/movies', api.fetchMovies);
 app.get('/server/api/movies/:id', api.fetchMovie);
 app.get('/server/api/movies/:id/actors', api.fetchActorsOfMovie);
 app.post('/server/api/movies', api.addMovie);
-app.put('/server/api/movies', api.updateMovie);
+app.put('/server/api/movies/:id', api.updateMovie);
 app.delete('/server/api/movies/:id', api.deleteMovie);
 
 
